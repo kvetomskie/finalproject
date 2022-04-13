@@ -1,0 +1,15 @@
+Now that you have postfix and sendemail configured and running, 
+It's time to send the actual email.
+
+This is done with the following command
+
+$ sendemail -f <fromaddress> -t <destinationaddress> -u "<subject>" -m "<message>" -a <filepath for attaching files>
+
+This will deliver an email with whatever from address you choose to your target.
+This method will also send it to the spam folder and it will not download embedded images until out of the spam folder.
+
+The next step will show you what we did to format it with HTML code and embed the image at the footer along with inserting a link.
+
+
+
+
