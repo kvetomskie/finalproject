@@ -1,0 +1,19 @@
+This is the walkthrough of how to set up the SMTP server on a Linux box.
+SMTP stankds for Simple Mail Transfer Protocol and has been around a long time.
+
+
+First, start with a fresh Kali box
+Run 
+$ sudo apt-get update
+and then 
+$ apt-get upgrade
+This updates the package list with the latest available versions and then updates the package list with the latest available versions
+
+Next, you'll need to install postfix to host your own mail server
+this is done with 
+$ apt install postfix
+Make sure you run it as root
+
+
+
+
