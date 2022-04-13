@@ -6,13 +6,14 @@ First, start with a fresh Kali box
 Run 
 $ sudo apt-get update
 and then 
-$ apt-get upgrade
+$ sudo apt-get upgrade
 This updates the package list with the latest available versions and then updates the package list with the latest available versions
 
 Next, you'll need to install postfix to host your own mail server
 this is done with 
-$ apt install postfix
-Make sure you run it as root
+$ sudo apt install postfix
+
+
 
 
 
