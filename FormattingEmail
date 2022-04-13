@@ -1,0 +1,16 @@
+To make the email seem as legitimate as possible, we included some HTML formatting to change font colors and sizes.
+We also embedded an image by referencing a link and <img src>
+
+
+The following HTML code was placed in the message body of the email which allowed us to make the email seem as 
+realistic as possible:
+<html>
+<div dir="ltr"><font color="#FF0000" size="4">Fullstack Academy </font><div><font size="4">
+Urgent Response Required</font></div><div><font color="#000000"><br></font></div><div>
+<font color="#000000">Good afternoon Zane,</font></div><div>
+<font color="#000000">Upon receiving your Blue Team Final Exam, we noticed you left several questions blank.
+</font></div><div><font color="#000000">Please click <a href="https://###linkdeletedforyoursafety###">
+this link</a> to complete the blank questions and resubmit the form automatically.</font></div><div><font color="#000000">
+<br></font></div><div><font color="#000000">Thanks,</font></div><div>
+<font color="#000000">Stephen Mathews</font></div><div>2110-FTB-ET-CYB-PT</div></div>
+</html>
