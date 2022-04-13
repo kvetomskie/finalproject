@@ -14,3 +14,15 @@ this link</a> to complete the blank questions and resubmit the form automaticall
 <br></font></div><div><font color="#000000">Thanks,</font></div><div>
 <font color="#000000">Stephen Mathews</font></div><div>2110-FTB-ET-CYB-PT</div></div>
 </html>
+
+
+Then within the HTML code, we included a image link from the FullStack Academy site to appear at the end of the email.
+
+This is the code we used:
+<html>
+<img src="https://s.yimg.com/ny/api/res/1.2/Ul0nDT57QK55R7V6teF.TA--
+/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTIzMjtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/EyS8qKsIXUQgAE40SMoutA--
+~B/aD0xMTY7dz00ODA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/business-wire.com/2a71e39781e154b4c8a4f40e647c2178"
+</html>
+
+Conclusion on next page
