@@ -13,8 +13,10 @@ Next, you'll need to install postfix to host your own mail server
 this is done with 
 $ sudo apt install postfix
 
-
-
-
+The popup menu will come up promting you to configure postfix.
+Click ok, 
+Then select internet site,
+Then type your system name.
+Postfix will complete installation and you're ready to move on.
 
 
