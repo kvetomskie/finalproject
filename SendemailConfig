@@ -1,0 +1,13 @@
+After installing postfix and configuring it, it is time to install the sendemail program.
+This is what we will use to send the actual fake email.
+To install sendemail,
+$ apt install sendemail
+
+Now that you have the proper tools, it's time to start the mail server.
+This is as simple as running 
+$ systemctl start postfix
+
+To confirm postfix is running, 
+$ service postfix status
+
+Next up is spoofing the from address and entering your target's email
