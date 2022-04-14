@@ -1,0 +1,27 @@
+In the previous files we showed you how simple it is to set up your own SMTP server and 
+send a spear fishing email to your target by spoofing the sender address, adding some HTML code
+to make it look official and how to embed an image to finish the email.
+
+There are ways to get the email to come directly into the inbox of your target, 
+but unfortunately for us, they cost money.
+This can be achieved through services like smtp2go.
+After downloading and subscribing to their service, you can specify which IP and port you want 
+the email server to use.  This is done with the -s <SERVER:PORT> option on the sendemail protocol.
+
+There are a few way to tell that this malicious email didn't come from a trusted source:
+-Google sends this message to the spam folder (first red flag)
+-Google also includes a giant yellow box that says this isn't from a legitmate source, directly above the message body.
+-If you click 'show original' in the options tab on the email, you can view the ARC-Authentication-Results 
+-In the ARC-Authentication-Results you find a few key pieces of information...
+--First there's the DKIM = <pass or fail> This lets you know if the header passed the authentication process.
+---A DKIM pass indicates the email message has a DKIM signature and passed the mailbox provider's verification check
+---A DKIM fail indicates the email message has a DKIM signature but there was an error causing a verification failure
+--- Google states: DomainKeys Identified Mail is a protocol that allows an organization to take responsibility for
+transmitting a message by signing it in a way that mailbox providers can verify.
+---DKIM record verification is made possible through cryptographic authentication.
+--Next is the SPF <pass or fail>   An SPF Validation error can occur when the Sender Policy Framework validation for a sender's domain does not succeed
+---There are two different types of failures: hard fail and soft fail
+----A hard fail means that emails from unauthorized senders are deleted only.  It will not make it to your spam folder or inbox.
+----A soft fail means that mail can be allowed through but should be tagged as spam or suspicious.
+--If you encounter a hard or soft fail under the SPF ARC Authentication Results, more than likely the email is not from the actual sender and is malicious.
+--So to put it simply, think before you click...
